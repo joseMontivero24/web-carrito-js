@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carrito</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Wallpoet&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Tilt+Prism&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="CSS/styles.css" />
+    <link rel="stylesheet" href="CSS/normalice.css" />
+    <script src="https://kit.fontawesome.com/e78c345f36.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="cabecera">
+        <div class="content header">
+            <div class="logo">
+                <h1>EDU<span>TECH</span></h1>
+            </div>
+
+            <div class="icons two columns">
+                <ul>
+                    <li class="submenu">
+                        <a href="#"><i class="fas fa-shopping-cart" id="img-carrito"></i></a>
+
+                        <div id="carrito">
+                            <table id="lista-carrito" class="u-full-width lista-card">
+                                <thead class="padre">
+                                    <tr class="padre-hijo">
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                        <th>Cantidad</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                            <a href="#" id="vaciar-carrito" class="btn-5 button u-full-width borrar-curso">Vaciar
+                                carrito</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="info">
+            <h2>Cursos de Programación</h2>
+            <p>Desde: <span>$ 2.000</span></p>
+        </div>
+    </header>
+
+    <div class="banner">
+        <div class="row">
+            <div class="content-banner">
+                <i class="fa-regular fa-lightbulb"></i>
+                <div class="info">
+                    <p>100 Cursos en linea</p>
+                    <p>Explora los temas mas recientes</p>
+                </div>
+            </div>
+            <div class="content-banner">
+                <i class="fa-solid fa-person-chalkboard"></i>
+                <div class="info">
+                    <p>Instructores Expertos</p>
+                    <p>Aprende con distintos estilos</p>
+                </div>
+            </div>
+            <div class="content-banner">
+                <i class="fa-solid fa-business-time"></i>
+                <div class="info">
+                    <p>Acceso de por vida</p>
+                    <p>Aprende a tu ritmo</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main id="lista-cursos" class="listado-cursos contenedor">
+        <h2 class="titulo">Cursos de Programacion en Línea</h2>
+
+        <section id="row">
+            <div class="card">
+                <img class="imagen-curso" src="img/html-grand.png" alt="html-img" />
+                <div class="info-card">
+                    <h3>Cursos de HTML</h3>
+                    <p class="profe">Prof: Jose Montivero</p>
+                    <p class="precio">$1.000</p>
+                    <a href="#" class="agregar-carrito" data-id="1">Agregar al Carrito</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="imagen-curso" src="img/css_blog.png" alt="css-img" />
+
+                <div class="info-card">
+                    <h3>Cursos de CSS</h3>
+                    <p class="profe">Prof: Jose Montivero</p>
+                    <p class="precio">$1.200</p>
+                    <a href="#" class="agregar-carrito" data-id="2">Agregar al Carrito</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="imagen-curso" src="img/sass.png" alt="sass-img" />
+
+                <div class="info-card">
+                    <h3>Curso de Sass</h3>
+                    <p class="profe">Prof: Jose Montivero</p>
+                    <p class="precio">$1.250</p>
+                    <a href="#" class="agregar-carrito" data-id="3">Agregar al Carrito</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="imagen-curso" src="img/javascipt.png" alt="js-img" />
+                <div class="info-card">
+                    <h3>Curso de JavaScript</h3>
+                    <p class="profe">Prof: Jose Montivero</p>
+                    <p class="precio">$800</p>
+                    <a href="#" class="agregar-carrito" data-id="4">Agregar al Carrito</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="imagen-curso" src="img/react.jpg" alt="react-img" />
+                <div class="info-card">
+                    <h3>Curso de React</h3>
+                    <p class="profe">Prof: Jose Montivero</p>
+                    <p class="precio">$1.500</p>
+                    <a href="#" class="agregar-carrito" data-id="5">Agregar al Carrito</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="imagen-curso" src="img/typescript-gran.jpg" alt="img-types" />
+                <div class="info-card">
+                    <h3>Curso de TypeScript</h3>
+                    <p class="profe">Prof: Jose Montivero</p>
+                    <p class="precio">$2.000</p>
+                    <a href="#" class="agregar-carrito" data-id="6">Agregar al Carrito</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="imagen-curso" src="img/node.jpg" alt="node-img" />
+                <div class="info-card">
+                    <h3>Curso de Node.js</h3>
+                    <p class="profe">Prof: Jose Montivero</p>
+                    <p class="precio">$1.900</p>
+                    <a href="#" class="agregar-carrito" data-id="7">Agregar al Carrito</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="imagen-curso" src="img/express.png" alt="expre-img" />
+                <div class="info-card">
+                    <h3>Curso de Express.js</h3>
+                    <p class="profe">Prof: Jose Montivero</p>
+                    <p class="precio">$2.000</p>
+                    <a href="#" class="agregar-carrito" data-id="8">Agregar al Carrito</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="imagen-curso" src="img/sql.png" alt="sql-img" />
+                <div class="info-card">
+                    <h3>Curso de SQL.js</h3>
+                    <p class="profe">Prof: Jose Montivero</p>
+                    <p class="precio">$1.800</p>
+                    <a href="#" class="agregar-carrito" data-id="9">Agregar al Carrito</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="content-footer contenedor">
+            <div class="enlaces">
+                <a href="#">Inicio</a>
+                <a href="#">Blog</a>
+                <a href="#">Contacto</a>
+                <a href="#">Ayuda</a>
+            </div>
+
+            <div class="enlaces">
+                <a href="#">Facebook</a>
+                <a href="#">Imstagram</a>
+                <a href="#">Linkedin</a>
+                <a href="#">Whatsapp</a>
+            </div>
+
+            <div class="enlaces">
+                <a href="#">Cursos</a>
+                <a href="#">Profesor</a>
+                <a href="#">Egresados</a>
+                <a href="#">Diplomas</a>
+            </div>
+        </div>
+        <p class="derechos">
+            Derechos reservados &copy; - Jose Montivero FullStack Developer
+        </p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

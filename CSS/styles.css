@@ -1,0 +1,434 @@
+:root {
+    /* colores */
+    ---color-menu: #262A56;
+    ---color-primary: #000000;
+    ---color-secundary: #77037B;
+    ---color-blanco: #FFEAEA;
+
+    /* Fuentes */
+    ---fuente-logo: 'Tilt Prism', cursive;
+    ---fuente-logo2: 'Wallpoet', cursive;
+    ---fuente-principal: 'Poppins', sans-serif;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: var(---fuente-principal);
+    font-size: 1.6rem;
+    line-height: 1.8;
+}
+
+/* GLOBALES PARA EL PROYECTO */
+
+.contenedor {
+    max-width: 120rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 900;
+    line-height: 1.2;
+    margin: 1rem 0 4rem 0;
+}
+
+h1 {
+    font-size: 4.8rem;
+}
+
+h2 {
+    font-size: 5rem;
+}
+
+h3 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    /* height: auto; */
+}
+
+/* estilos a la cabecera */
+
+.cabecera {
+    width: 100%;
+    min-height: 50rem;
+    background: #232526;
+    background: -webkit-linear-gradient(to right, rgba(65, 67, 69, 0.61), rgba(35, 37, 38, 0.603)), url(../img/com.jpg);
+    background: linear-gradient(to right, rgba(65, 67, 69, 0.63), rgba(35, 37, 38, 0.603)), url(../img/com.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+.cabecera .info {
+    margin-top: 5rem;
+    padding: 3rem;
+    color: var(---color-blanco);
+}
+
+@media (min-width: 768px) {
+    .cabecera .info {
+        display: flex;
+        flex-direction: column;
+        padding: 5rem;
+    }
+}
+
+.cabecera .info h2 {
+
+    font-size: 6rem;
+    text-shadow: 0px 0px 4px var(---color-secundary);
+
+}
+
+.cabecera .info p {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.cabecera .content {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(---color-blanco);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.logo h1 {
+    font-family: var(---fuente-logo2);
+    color: var(---color-secundary);
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin: 0;
+
+}
+
+.logo span {
+    color: var(---color-menu);
+
+}
+
+/* para la tabla del carrito */
+ul {
+    list-style: none;
+}
+
+th,
+td {
+    font-size: 1.4rem;
+    padding: 1.2rem 1.5rem;
+    text-align: left;
+    border-bottom: 1px solid #E1E1E1;
+}
+
+th:first-child,
+td:first-child {
+    padding-left: 0;
+}
+
+th:last-child,
+td:last-child {
+    padding-right: 0;
+}
+
+.borrar-curso {
+    background-color: red;
+    border-radius: 50%;
+    padding: .5rem 1rem;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.submenu {
+    position: relative;
+    list-style: none;
+    margin: 0px;
+}
+
+.submenu #carrito {
+    display: none;
+}
+
+.submenu #carrito .list-card .padre .padre-hijo {
+    color: var(--white);
+    min-width: 30rem;
+    height: 1.5rem;
+    border-bottom: 1px solid rgb(211, 211, 211);
+    display: flex;
+    padding: 2rem 0;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+table {
+    margin-bottom: 2rem;
+}
+
+
+.btn-5 {
+    display: inline-block;
+    min-width: 100%;
+    text-align: center;
+    margin: 0px auto;
+    margin-top: 1rem;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    background-color: var(---color-secundary);
+    border-radius: 1rem;
+    color: var(---color-blanco);
+}
+
+.btn-5:hover {
+    background-color: #a000a5;
+}
+
+
+.submenu:hover #carrito {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    z-index: 1;
+    background-color: var(---color-blanco);
+    padding: 2rem;
+    min-height: 40rem;
+    min-width: 30rem;
+}
+
+.vacio {
+    padding: 1rem;
+    background-color: crimson;
+    text-align: center;
+    border-radius: 1rem;
+    color: white;
+}
+
+.agregar-carrito {
+    margin: 1rem 0;
+}
+
+#img-carrito {
+    font-size: 2.5rem;
+    color: #333;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+
+/* fin de estilos para la tabla del carrito */
+
+
+/* Estilos a la seccion de  hero */
+
+.banner {
+    width: 100%;
+    background: linear-gradient(to right, var(---color-secundary), var(---color-menu));
+    padding: 2rem;
+    color: var(---color-blanco);
+
+}
+
+@media (min-width: 768px) {
+    .row {
+        display: flex;
+        flex-direction: row;
+        column-gap: 2rem;
+
+    }
+}
+
+.content-banner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4rem;
+    margin-bottom: 3rem;
+    padding: 2rem;
+
+}
+
+@media (min-width: 768px) {
+    .content-banner {
+        gap: 0;
+        margin: 0px auto;
+        padding: 0;
+    }
+}
+
+.content-banner .info {
+    padding: 2rem;
+}
+
+.content-banner .info p {
+    margin: 0;
+}
+
+.banner i {
+    font-size: 5rem;
+}
+
+/* Fin de estilos a la seccion de  hero */
+
+
+/* Estilos para la seccion de cursos */
+
+.listado-cursos {
+    margin-top: 5rem;
+}
+
+@media (min-width: 768px) {
+    .listado-cursos h2 {
+        text-align: center;
+        margin-top: 8rem;
+    }
+}
+
+.card {
+    box-shadow: 1px 2px 8px -3px rgba(51, 51, 51, 1);
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+    background-color: #f0ecec;
+}
+
+@media (min-width: 768px) {
+    .listado-cursos section {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .listado-cursos #row {
+        margin-top: 5rem;
+        padding-top: 5rem;
+    }
+}
+
+.imagen-curso {
+    border-radius: 1rem 1rem 0 0;
+}
+
+.info-card {
+
+    padding: 2rem 2rem 4rem 2rem;
+
+
+}
+
+.agregar-carrito {
+
+    color: var(---color-blanco);
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+    display: block;
+    width: 90%;
+    padding: .5rem;
+    border-radius: 1.5rem;
+
+    margin: 0px auto;
+    transition: all 300ms;
+    background: linear-gradient(to right, var(---color-secundary), var(---color-menu));
+}
+
+.agregar-carrito:hover {
+    transform: scale(1.1);
+}
+
+/* Estilos para la seccion de cursos */
+
+/* Estilos para el footer */
+
+footer {
+
+    background: #232526;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, rgba(65, 67, 69, 0.712), rgba(35, 37, 38, 0.712)), url(../img/footer.png);
+    background: linear-gradient(to right, rgba(65, 67, 69, 0.719), rgba(35, 37, 38, 0.705)), url(../img/footer.png);
+    /* height: 20rem; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-top: 4rem;
+}
+
+@media (min-width: 768px) {
+    footer {
+        height: 30rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
+footer a {
+    color: var(---color-blanco);
+    transition: all 300ms;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+footer a:hover {
+    color: var(---color-secundary);
+    border-bottom: 1px solid var(---color-secundary);
+}
+
+.content-footer {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+
+}
+
+@media (min-width: 768px) {
+    .content-footer {
+        flex-direction: row;
+        justify-content: space-evenly;
+        gap: 4rem;
+    }
+}
+
+.enlaces {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+footer p {
+    margin: 0;
+    color: var(---color-blanco);
+    background-color: #333;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+/* Fin de estilos para el footer */
